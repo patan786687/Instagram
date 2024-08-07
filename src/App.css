@@ -24,10 +24,10 @@
 }
 .App-LoginSource{
   width: 40%;
-  height: 69%;
+  height: 90%;
   background-color: #ffffff;
   margin-right: 100px;
-  margin-bottom: 21vh;
+  
   border: 1px solid lightgray;
 
 }
@@ -161,3 +161,164 @@
   #signup{
     color: #1d8cda;
   }
+
+  /* Responsive styles */
+  @media screen and (max-width: 1080px){
+    .App-Container {
+      width: 80vw;
+      height: 90vh;
+      
+     
+     
+    }
+    .inner-Icons{
+      display: none;
+    }
+    .App-LoginSource {
+      width: 60%;
+      height: auto;
+      margin: 20px 0 20px 0;
+      
+    }
+   
+      .App-LoginInput{
+        
+      }
+
+  }
+
+@media screen and (max-width: 768px) {
+  .App-Container {
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+   
+  }
+
+  .App-mobilelogo {
+    width: 100%;
+    height: auto;
+  }
+
+  .App-LoginSource {
+    width: 90%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .img {
+   display: none;
+  }
+
+  .App-LoginInputField,
+  .Login-Button {
+    width: 90%;
+  }
+
+  .app-icons {
+    flex-direction: column;
+  }
+}
+.lines{
+  display: none;
+}
+.App-Signup{
+  margin: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .App-Container {
+    width: 100vw;
+    padding: 10px;
+    height: 90vh;
+  }
+
+  .App-LoginSource {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .App-LoginInputField,
+  .Login-Button {
+    width: 95%;
+  }
+
+  .App-Liner {
+    flex-direction: column;
+  }
+
+  .App-Icons {
+    margin-right: 0;
+  }
+
+  .app-icons {
+    flex-direction: column;
+  }
+}
+
+  /* //Instagram login css */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #3182d6;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    color: #3897f0;
+    text-decoration: none;
+  }
+  

@@ -5,7 +5,8 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import GooglePlay from './photos/GooglePlay.png'
 import Microsoft from './photos/Microsoft.png';
-import { useState } from 'react';
+
+
 
 
 
@@ -27,9 +28,9 @@ function App() {
           <button className='Login-Button'
           >Login</button>
           <div className='App-Liner'>
-            <div >_______________</div>
+            <div className='lines'>_______________</div>
             <div id='OR'>OR</div>
-            <div>________________</div>
+            <div className='lines'>________________</div>
           </div>
           <div className='App-Icons'>
           <div className='inner-Icons'>
