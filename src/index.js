@@ -6,12 +6,19 @@ import reportWebVitals from './reportWebVitals';
 
 
 import './App.css';
+import InstagramLoginPage from './NewLogin';
+import InstagramSignup from './signup';
+import InstagramFooter from './footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-   <App />
+   <>
+   <InstagramLoginPage/>
+   <InstagramFooter/>
+   </>
+
   </React.StrictMode>
 );
 
