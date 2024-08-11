@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaHome, FaSearch, FaCompass, FaVideo, FaEnvelope, FaBell, FaPlus, FaUser, FaBars } from 'react-icons/fa';
-
+import InstaName from './InstaName.PNG';
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col h-screen bg-blue-800 text-Black mr-auto ">
+    <div className="flex flex-col h-screen bg-blue-800 text-Black sticky top-0 z-50">
       <div className="flex items-center justify-center p-4">
-        <img src="path-to-your-instagram-logo.png" alt="Instagram Logo" className="w-24" />
+        <img src={InstaName} alt="Instagram Logo" className="w-24" />
       </div>
       <nav className="flex flex-col flex-grow justify-items-start">
         <ul className="space-y-4 mt-6">

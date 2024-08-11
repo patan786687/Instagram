@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import InstaName from './photos/InstaName.PNG'
-import { FaFacebookSquare } from "react-icons/fa";
 import Googleplay from './photos/GooglePlay.png';
 import Microsoft from './photos/Microsoft.png';
+import { Link } from 'react-router-dom';
 
 
 function InstagramSignup() {
@@ -165,9 +165,9 @@ function InstagramSignup() {
         <div className="w-100 max-w-md p-5 bg-white rounded-md shadow-md border border-lightgrey-700 mt-4">
         <p className="text-center text-gray-600">
           Have an account?{' '}
-          <a href="#" className="text-blue-500 underline">
+          <Link to="/" className="text-blue-500 underline">
             Log in
-          </a>
+          </Link>
         </p>
       </div>
       <div className="mt-6">
