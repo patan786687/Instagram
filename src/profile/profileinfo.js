@@ -1,6 +1,7 @@
 // src/components/InstaHeader.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Post from './postgrid';
 
 const profiles = [
   { id: 1, name: 'RomanRains...', img: 'https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2018/10/1109-Top-WWE-Superstars-Roman-Reigns.jpg?quality=86&strip=all' },
@@ -13,12 +14,13 @@ const profiles = [
   { id: 8, name: 'Hulk...', img: 'https://m.media-amazon.com/images/M/MV5BMjAxMDQ1MDE0Ml5BMl5BanBnXkFtZTcwOTc0MTIyMw@@._V1_.jpg' },
   { id: 9, name: 'BatMan...', img: 'https://www.nzherald.co.nz/resizer/v2/J5DWYMRIVTMAWJR2PQ5DYFLTE4.jpg?auth=40b78c30ea9fc6134d7dc8f4ab9c926b19aa8db6b64490fcd5fd1adc79e00b29&width=576&height=613&quality=70&smart=true' },
   { id: 10, name: 'SuperGirl...', img: 'https://media.cnn.com/api/v1/images/stellar/prod/161010100828-supergirl-2.jpg?q=x_0,y_0,h_619,w_1100,c_fill/h_833,w_1480' },
+  
  
 ];
 
 const InstaHeader = () => {
   return (
-    <div className="flex justify-start space-x-4 ml-4 p-4 bg-white">
+    <div className="flex over flow-x-scroll whitespace-nowrap flex justify-start space-x-4 ml-4 mt-5 p-4 bg-Black flex">
       {profiles.map(profile => (
         <Link to={`/profile/${profile.name}`} key={profile.id}>
           <div className="flex flex-col items-center">
@@ -31,8 +33,13 @@ const InstaHeader = () => {
           </div>
         </Link>
       ))}
+      
     </div>
+    
   );
+  
 };
+
+
 
 export default InstaHeader;

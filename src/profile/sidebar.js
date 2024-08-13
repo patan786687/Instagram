@@ -4,12 +4,12 @@ import InstaName from './InstaName.PNG';
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col h-screen bg-blue-800 text-Black sticky top-0 z-50">
-      <div className="flex items-center justify-center p-4">
+    <div className="flex flex-col h-screen bg-blue-800 text-Black sticky top-0 z-50 border border-gray-300">
+      <div className="flex items-center justify-center p-1">
         <img src={InstaName} alt="Instagram Logo" className="w-24" />
       </div>
-      <nav className="flex flex-col flex-grow justify-items-start">
-        <ul className="space-y-4 mt-6">
+      <nav className="flex flex-col flex-grow justify-items-start ">
+        <ul className="space-y-1 mt-6 ">
           <li className="flex items-center space-x-4 p-4  cursor-pointer">
             <FaHome size={24} />
             <span>Home</span>

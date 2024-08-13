@@ -5,6 +5,10 @@ import { FaFacebookSquare } from "react-icons/fa";
 import GooglePlay from './photos/GooglePlay.png';
 import Microsoft from './photos/Microsoft.png';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
+
+
 
 const InstagramLoginPage = () => {
   // State to hold input values
@@ -16,15 +20,33 @@ const InstagramLoginPage = () => {
   const validUsername = "Patan";
   const validPassword = "12345";
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Check if the entered username and password match the valid ones
-    if (username === validUsername && password === validPassword) {
-      alert('Login Success');
-    } else {
-      alert('Invalid Credentials');
+    try {
+      const response = await axios.post('http://localhost:5002/Newlogin', { username, password });
+      if (response.status === 200) {
+        alert('Login Successful');
+        console.log('User logged in:', response.data.user);
+      } else {
+        setError('Invalid username or password');
+      }
+    } catch (error) {
+      if (error.response) {
+        // The request was made, but the server responded with a status code outside the range of 2xx
+        console.error('Server responded with a status:', error.response.status);
+        setError('Invalid username or password');
+      } else if (error.request) {
+        // The request was made but no response was received
+        console.error('No response received:', error.request);
+        setError('No response from the server');
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        console.error('Error setting up request:', error.message);
+        setError('Error in request setup');
+      }
     }
   };
+  
 
   return (
     <div className="flex items-center justify-center h-screen">
@@ -103,4 +125,7 @@ const InstagramLoginPage = () => {
   );
 };
 
+
+
 export default InstagramLoginPage;
+

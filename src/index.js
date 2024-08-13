@@ -12,6 +12,8 @@ import HomeProfile from './profile/HomeProfile';
 import StickyNavbar from './ForgotNav';
 import ForgotPassword from './Forgot';
 import InstagramFooter from './footer';
+import Profileredering from './profile/Profileredering';
+import Post from './profile/postgrid';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,9 +24,12 @@ root.render(
    <Router>
     <Application/>
     {/* <HomeProfile/> */}
+    
     {/* <StickyNavbar/>
     <ForgotPassword/>
     <InstagramFooter/> */}
+    {/* <Profileredering/> */}
+    
    
     </Router>
    </>

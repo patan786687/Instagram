@@ -9,25 +9,29 @@ const ProfileSection = () => {
     { username: "Sharukh", status: "Popular", verified: true },
     { username: "Sharukh", status: "New to Instagram" },
     { username: "Pragya", status: "New to Instagram" },
+    { username: "Sharukh", status: "New to Instagram" },
+    { username: "Sharukh", status: "New to Instagram" },
+    { username: "Sharukh", status: "New to Instagram" },
   ];
 
   return (
-    <div className="w-1/4 p-4 ml-10">
+    <div className="w-1/4 p-4 ml-5">
       {/* Profile */}
-      <div className="flex items-center mb-4 mr-5">
+      <div className="flex items-center mr-5">
         <img
-          className="w-16 h-16 rounded-full"
+          className="w-16 h-16 mt-8 rounded-full"
           src="https://imgeng.jagran.com/images/2023/jan/ibrahim%20ali%20khan1675163352144.jpg" // Replace with actual path
           alt="Patan Ibrahim"
         />
-        <div className="ml-3">
+        <div className="ml-3 mt-10">
           <Link to="/profile" className="text-sm font-bold">
             patan.ibrahim.1
           </Link>
-          <p className="text-sm text-gray-500">Patan Ibrahim</p>
+          <p className="text-sm text-gray-500 flex flex-row">Patan Ibrahim</p>
           <Link to="/switch" className="text-blue-500 text-xs">
             Switch
           </Link>
+         
         </div>
       </div>
 
